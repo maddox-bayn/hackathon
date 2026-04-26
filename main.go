@@ -1,24 +1,47 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func DealAPackOfCards(deck []int) {
-	cardIndex := 0
-	//a, b, c := 0, 0, 0
-	for i := 1; i <= 4; i++ {
-
-		a := deck[cardIndex]
-		b := deck[cardIndex+1]
-		c := deck[cardIndex+2]
-
-		cardIndex += 3
-
-		fmt.Printf("Player %d: %d, %d, %d\n", i, a, b, c)
-	}
+func Enigma(a ***int, b *int, c *******int, d ****int) {
 
 }
 
 func main() {
-	deck := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
-	DealAPackOfCards(deck)
+	x := 5
+	y := &x
+	z := &y
+	a := &z
+
+	w := 2
+	b := &w
+
+	u := 7
+	e := &u
+	f := &e
+	g := &f
+	h := &g
+	i := &h
+	j := &i
+	c := &j
+
+	k := 6
+	l := &k
+	m := &l
+	n := &m
+	d := &n
+
+	fmt.Println(***a)
+	fmt.Println(*b)
+	fmt.Println(*******c)
+	fmt.Println(****d)
+
+	piscine.Enigma(a, b, c, d)
+
+	fmt.Println("After using Enigma")
+	fmt.Println(***a)
+	fmt.Println(*b)
+	fmt.Println(*******c)
+	fmt.Println(****d)
 }
