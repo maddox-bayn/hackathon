@@ -7,9 +7,8 @@ import (
 
 func main() {
 	input := os.Args[1]
+	//fmt.Println(input)
+	banner, _ := LoadBanner("standard.txt")
 
-	asciiTable, _ := LoadBanner("standard.txt")
-
-	fmt.Print(GenerateArt(input, asciiTable))
-
+	fmt.Print(GenerateArt(input, banner))
 }

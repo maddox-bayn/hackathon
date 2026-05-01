@@ -12,9 +12,9 @@ func GenerateArt(input string, banner map[rune][]string) string {
 		return ""
 	}
 
-	input = strings.ReplaceAll(input, "\n", "\\n")
+	//input = strings.ReplaceAll(input, "\n", "\\n")
 
-	siceINput := SplitInput(input)
+	siceINput := SplitChar(input)
 
 	isOnlynewline := true
 
@@ -30,13 +30,14 @@ func GenerateArt(input string, banner map[rune][]string) string {
 		}
 		return b.String()
 	}
-	for i, word := range siceINput {
-		validate(word)
+	for _, word := range siceINput {
+		//validate(word)
 
 		if word == "" {
-			if i < len(siceINput)-1 {
-				b.WriteString("\n")
-			}
+			// if i < len(siceINput)-1 {
+			// 	b.WriteString("\n")
+			// }
+			b.WriteString("\n")
 			continue
 		}
 
