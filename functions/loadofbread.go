@@ -1,7 +1,6 @@
-package main
+package functions
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -24,10 +23,4 @@ func LoafOfBread(str string) string {
 		count++
 	}
 	return b.String() + "\n"
-}
-
-func main() {
-	fmt.Print(LoafOfBread("deliciousbread"))
-	fmt.Print(LoafOfBread("This is a loaf of bread"))
-	fmt.Print(LoafOfBread("loaf"))
 }
