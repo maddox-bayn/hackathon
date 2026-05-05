@@ -1,12 +1,13 @@
 package main
 
-import (
-	"fmt"
-	"strconv"
-)
+import "fmt"
 
-
+func LoafOfBread(str string) string {
+	
+}
 
 func main() {
-	fmt.Println(ActiveBits(7))
+	fmt.Print(LoafOfBread("deliciousbread"))
+	fmt.Print(LoafOfBread("This is a loaf of bread"))
+	fmt.Print(LoafOfBread("loaf"))
 }
