@@ -22,15 +22,11 @@ func PrintList(l *NodeI) {
 	}
 	fmt.Print(nil, "\n")
 }
-
 func main() {
 	root := &TreeNode{Data: "4"}
 	BTreeInsertData(root, "1")
 	BTreeInsertData(root, "7")
 	BTreeInsertData(root, "5")
-	fmt.Println(root.Left.Data)
-	fmt.Println(root.Data)
-	fmt.Println(root.Right.Left.Data)
-	fmt.Println(root.Right.Data)
+	BTreeApplyPostorder(root, fmt.Println)
 
 }
