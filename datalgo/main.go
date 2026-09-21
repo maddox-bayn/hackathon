@@ -27,6 +27,5 @@ func main() {
 	BTreeInsertData(root, "1")
 	BTreeInsertData(root, "7")
 	BTreeInsertData(root, "5")
-	BTreeApplyPostorder(root, fmt.Println)
-
+	fmt.Println(BTreeLevelCount(root))
 }
