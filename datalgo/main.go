@@ -27,5 +27,10 @@ func main() {
 	BTreeInsertData(root, "1")
 	BTreeInsertData(root, "7")
 	BTreeInsertData(root, "5")
-	fmt.Println(BTreeLevelCount(root))
+	node := BTreeSearchItem(root, "4")
+	fmt.Println("Before delete:")
+	BTreeApplyInorder(root, fmt.Println)
+	root = BTreeDeleteNode(root, node)
+	fmt.Println("After delete:")
+	BTreeApplyInorder(root, fmt.Println)
 }
